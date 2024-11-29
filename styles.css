@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 10px;
+}
+h1, h2 {
+  text-align: center;
+}
+form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  margin: 10px 0 5px 0;
+  font-size: 16px;
+}
+input[type="text"] {
+  width: 90%;
+  max-width: 400px;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.div-group{
+  border-left:  2px solid black;  
+}
+.buttons-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.buttons-group button {
+  flex: 1 1 30%;
+  min-width: 80px;
+  max-width: 120px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.buttons-group button.active {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+.submit-button, #exportButton, #exportPdfButton, #resetButton {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 400px;
+}
+.submit-button:hover, #exportButton:hover, #exportPdfButton:hover, #resetButton:hover {
+  background-color: #0056b3;
+}
+#resetButton {
+  background-color: #dc3545;
+}
+#resetButton:hover {
+  background-color: #a71d2a;
+}
+.table-wrapper {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+  font-size: 14px;
+}
+th {
+  background-color: #f2f2f2;
+}
+@media (max-width: 768px) {
+  .buttons-group button {
+    flex: 1 1 45%;
+  }
+  th, td {
+    font-size: 12px;
+  }
+}
