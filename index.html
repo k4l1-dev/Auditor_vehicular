@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Formulario de Registro</h1>
+  <div class="buttons-group">
+    <button type="button" class="select-button" data-value="L">L</button>
+    <button type="button" class="select-button" data-value="O">O</button>
+    <button type="button" class="select-button" data-value="M2">M2</button>
+    <button type="button" class="select-button" data-value="C">C</button>
+    <button type="button" class="select-button" data-value="A">A</button>
+    <button type="button" class="select-button" data-value="PNP">PNP</button>
+  </div>
+  <form id="dataForm">
+    <div class="div-group">
+
+      <label for="input1">Placa 1:</label>      
+      <input type="text" id="input1" required> <br>
+      <label for="input2">N° ejes:</label>
+      <input type="text" id="input2" required>
+    </div> <br>
+    <div class="div-group">
+      <label for="input3">Placa 2:</label>
+      <input type="text" id="input3" > <br>
+      <label for="input4">N° ejes:</label>
+      <input type="text" id="input4" >
+    </div>
+
+
+
+    <button type="submit" class="submit-button">Guardar</button>
+  </form>
+
+  <h2>AUDITORIA DE FLUJO VEHICULAR</h2>
+  <div class="table-wrapper">
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Hora de Registro</th>
+          <th>Placa 1</th>
+          <th>Tipo de Vehiculo</th>
+          <th>Ejes</th>
+          <th>placa 2</th>
+          <th>Ejes</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <button id="exportButton">Exportar a CSV</button>
+  <button id="exportPdfButton">Exportar a PDF</button>
+  <button id="resetButton" class="reset-button">Resetear Datos</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
